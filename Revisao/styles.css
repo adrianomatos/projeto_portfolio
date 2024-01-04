@@ -1,0 +1,75 @@
+body {
+  background-color: #222222;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+#titulo {
+  text-align: center;
+  font-size: 40px;
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+section#html {
+  background-color: aqua;
+}
+#semantica ul {
+  background-color: red;
+}
+
+#formularios .inputs {
+  background-color: green;
+}
+
+#css {
+  background-color: blueviolet;
+}
+
+#flexbox {
+  background-color: yellow;
+  border: solid yellow;
+  border-radius: 1%;
+}
+
+/* 😍 ---------------------- */
+#flexbox .container {
+  display: flex;
+  /* gap: 20px; */
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#flexbox .container .box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+#flexbox .container .box2 {
+  width: 100px;
+  height: 400px;
+  background-color: green;
+}
+
+/* 😍 ---------------------- */
+#grid-layout {
+  background-color: orangered;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  /* grid-template-columns: repeat(4, 1fr); */
+  gap: 20px;
+  justify-content: center;
+}
+
+.container-grid .caixa {
+  height: 100px;
+  background-color: blue;
+}
