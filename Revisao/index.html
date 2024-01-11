@@ -2,147 +2,173 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrontEnd com React</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FrontEnd com React</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1 id="titulo">FrontEnd com React</h1>
-    <section id="html">
-        <h2>Tags de formatação HTML</h2>
-        <ul>
-            <li>Comentários</li>
-            <li>h1 - h6</li>
-            <li>p</li>
-            <li>hr</li>
-            <li><a href="" target="_blank"></a>Link</li>
-            <li>img</li>
-            <li>br</li>
-            <li>ul -> li</li>
-            <li>ol -> li</li>
-            <li>div (block)</li>
-            <li>span (inline)</li>
-            <li>b ou strong - negrito/importante</li>
-            <li>em ou i - enfase/italico</li>
-            <li>u para underline está em desuso</li>
-            <li>s para riscado</li>
-            <li>mark para marcador</li>
-            <li>pre para pre-formatado</li>
-            <li>code para codigo</li>
-            <li>sub subscrito</li>
-            <li>sup subrescrito</li>
-            <li>table (rolspan e colspan)</li>
-            <li>thead, tbody ou tfoot - cabecalhp, main, rodape</li>
-            <li>tr com th - linha 1</li>
-            <li>tr com td</li>
-        </ul>
-        <img src="ada.png" alt="Descricao da imagem">
-    </section>
+	<h1 id="titulo">FrontEnd com React</h1>
+	<section id="html">
+		<h2>Tags de formatação HTML</h2>
+		<ul>
+			<li>Comentários</li>
+			<li>h1 - h6</li>
+			<li>p</li>
+			<li>hr</li>
+			<li><a href="" target="_blank"></a>Link</li>
+			<li>img</li>
+			<li>br</li>
+			<li>ul -> li</li>
+			<li>ol -> li</li>
+			<li>div (block)</li>
+			<li>span (inline)</li>
+			<li>strong ou b - importante/negrito</li>
+			<li>em ou i - enfase/italico</li>
+			<li>u - underline/sublinhado (está em desuso)</li>
+			<li>s - riscado</li>
+			<li>mark - marcador</li>
+			<li>pre - pre-formatado</li>
+			<li>code - codigo</li>
+			<li>blockquote - Citação</li>
+			<li>sub - subscrito</li>
+			<li>sup - subrescrito</li>
+			<li>table (rolspan e colspan)</li>
+			<li>thead, tbody ou tfoot - cabecalhp, main, rodape</li>
+			<li>tr com th - linha 1</li>
+			<li>tr com td</li>
+			<li>Links adicionais</li>
+			<li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u</li>
+		</ul>
+		<img src="ada.png" alt="Descricao da imagem">
+	</section>
 
-    <section id="semantica">
-        <h2>Tags de semântica HTML</h2>
-        <ul>
-            <li>header - cabecalho</li>
-            <li>main - conteudo principal</li>
-            <li>aside - conteudo lateral</li>
-            <li>footer - rodape</li>
-            <li>section - sessão</li>
-            <li>figure - envolve imagem</li>
-            <li>nav - barra navegacao</li>
-        </ul>
-    </section>
+	<section id="semantica">
+		<h2>Tags de semântica HTML</h2>
+		<ul>
+			<li>header - cabecalho</li>
+			<li>main - conteudo principal</li>
+			<li>aside - conteudo lateral</li>
+			<li>footer - rodape</li>
+			<li>section - sessão</li>
+			<li>figure - envolve imagem</li>
+			<li>nav - barra navegacao</li>
+		</ul>
 
-    <section id="formularios">
-        <h2>Formularios</h2>
-        <ul class="inputs">
-            <li>inputs diversos</li>
-            <li>textarea</li>
-            <li>select</li>
-        </ul>
-        <select name="tecnologias" id="">
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-        </select>
-    </section>
+		<h3>Figure</h3>
+		<figure>
+			<img src="link_da_imagem" alt="Logo do HTML" width="100">
+			<figcaption>Descrição da imagem</figcaption>
+		</figure>
 
-    <section id="css">
-        <h2>CSS</h2>
-        <ul>
-            <li>font-size - tamanho</li>
-            <li>font-weight - largura da fonte</li>
-            <li>line-height - altura da linha</li>
-            <li>color</li>
-            <li>background-color</li>
-            <li>font family</li>
-            <li>margin</li>
-            <li>padding</li>
-            <li>border</li>
-            <li>border-radius</li>
-            <li>width</li>
-            <li>height</li>
-            <li>ID</li>
-            <li>classes</li>
-        </ul>
+		<h3>ARTICLE - Para conteúdos divididos em SUBconteúdos internos</h3>
+		<!-- Card de uma postagem do Blog -->
+		<article>
+			<header>
+				<!-- Título -->
+			</header>
+			<main>
+				<!-- Imagem -->
+				<!-- Descrição -->
+			</main>
+			<footer>
+				<!-- Autor -->
+				<!-- Data de publicação -->
+				<!-- Palavras-chave -->
+			</footer>
+		</article>
+	</section>
 
-    </section>
+	<section id="formularios">
+		<h2>Formularios</h2>
+		<ul class="inputs">
+			<li>inputs diversos</li>
+			<li>textarea</li>
+			<li>select</li>
+		</ul>
+		<select name="tecnologias" id="">
+			<option value="html">HTML</option>
+			<option value="css">CSS</option>
+		</select>
+	</section>
 
-    <section id="flexbox">
-        <h2>DISPLAY FLEXBOX</h2>
-        <p>block - linha inteira bloqueada</p>
-        <p>inline - seu espaço E na linha</p>
+	<section id="css">
+		<h2>CSS</h2>
+		<ul>
+			<li>font-size - tamanho</li>
+			<li>font-weight - largura da fonte</li>
+			<li>line-height - altura da linha</li>
+			<li>color</li>
+			<li>background-color</li>
+			<li>font family</li>
+			<li>margin</li>
+			<li>padding</li>
+			<li>border</li>
+			<li>border-radius</li>
+			<li>width</li>
+			<li>height</li>
+			<li>ID</li>
+			<li>classes</li>
+		</ul>
 
-        <p>flex - display fica block</p>
-        <p>gap - espaço entre objetos (se usar justify-content nem precisa)</p>
-        <p>flex-direction - row ou column</p>
-        <p>OBS: row ou column invertem as funções de justify-content por align-items e vice-versa</p>
+	</section>
 
-        <ul>
-            <!-- organiza as caixas unidas -->
-            <li>ALINHAMENTO HORIZONTAL</li>
-            <li>justify-content - start, center ou end</li>
-            <!-- organiza o espaçamento entre as caixas -->
-            <li>justify-content: space-around - ao redor</li>
-            <li>justify-content: space-between - entre</li>
-            <li>justify-content: space-evenly - IGUAL</li>
-        </ul>
-        <ul>
-            <li>ALINHAMENTO VERTICAL (Ideal p/ quando objetos tiverem alturas diferentes</li>
-            <li>align-items: start, center, end</li>
-        </ul>
+	<section id="flexbox">
+		<h2>DISPLAY FLEXBOX</h2>
+		<p>block - linha inteira bloqueada</p>
+		<p>inline - seu espaço E na linha</p>
 
-        <div class="container">
-            <div class="box">Conteudo</div>
-            <div class="box2">Meu Conteudo</div>
-            <div class="box">Nosso Conteudo</div>
-            <div class="box2">Conteudo Daqueles</div>
-        </div>
-    </section>
+		<p>flex - display fica block</p>
+		<p>gap - espaço entre objetos (se usar justify-content nem precisa)</p>
+		<p>flex-direction - row ou column</p>
+		<p>OBS: row ou column invertem as funções de justify-content por align-items e vice-versa</p>
 
-    <section id="grid-layout">
-        <h2>GRID - grades</h2>
-        <ul>
-            <li><strong>grid-template-columns</strong> - quantidade E largura de cada coluna</li>
-            <li><strong>grid-template-columns: repeat(4, 100px)</strong> - largura fixa definida</li>
-            <li><strong>grid-template-columns: repeat(4, 1fr)</strong>- largura flexível (flex-row) - preenche 100% do container</li>
+		<ul>
+			<!-- organiza as caixas unidas -->
+			<li>ALINHAMENTO HORIZONTAL</li>
+			<li>justify-content - start, center ou end</li>
+			<!-- organiza o espaçamento entre as caixas -->
+			<li>justify-content: space-around - ao redor</li>
+			<li>justify-content: space-between - entre</li>
+			<li>justify-content: space-evenly - IGUAL</li>
+		</ul>
+		<ul>
+			<li>ALINHAMENTO VERTICAL (Ideal p/ quando objetos tiverem alturas diferentes</li>
+			<li>align-items: start, center, end</li>
+		</ul>
 
-        </ul>
-        <div class="container-grid">
-            <div class="caixa"></div>
-            <div class="caixa"></div>
-            <div class="caixa"></div>
-            <div class="caixa"></div>
-            <div class="caixa"></div>
-            <div class="caixa"></div>
-        </div>
-    </section>
+		<div class="container">
+			<div class="box">Conteudo</div>
+			<div class="box2">Meu Conteudo</div>
+			<div class="box">Nosso Conteudo</div>
+			<div class="box2">Conteudo Daqueles</div>
+		</div>
+	</section>
+
+	<section id="grid-layout">
+		<h2>GRID - grades</h2>
+		<ul>
+			<li><strong>grid-template-columns</strong> - quantidade E largura de cada coluna</li>
+			<li><strong>grid-template-columns: repeat(4, 100px)</strong> - largura fixa definida</li>
+			<li><strong>grid-template-columns: repeat(4, 1fr)</strong>- largura flexível (flex-row) - preenche 100% do
+				container</li>
+
+		</ul>
+		<div class="container-grid">
+			<div class="caixa"></div>
+			<div class="caixa"></div>
+			<div class="caixa"></div>
+			<div class="caixa"></div>
+			<div class="caixa"></div>
+			<div class="caixa"></div>
+		</div>
+	</section>
 </body>
 
 </html>
