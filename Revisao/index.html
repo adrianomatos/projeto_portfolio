@@ -10,165 +10,331 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<h1 id="titulo">FrontEnd com React</h1>
-	<section id="html">
-		<h2>Tags de formatação HTML</h2>
-		<ul>
-			<li>Comentários</li>
-			<li>h1 - h6</li>
-			<li>p</li>
-			<li>hr</li>
-			<li><a href="" target="_blank"></a>Link</li>
-			<li>img</li>
-			<li>br</li>
-			<li>ul -> li</li>
-			<li>ol -> li</li>
-			<li>div (block)</li>
-			<li>span (inline)</li>
-			<li>strong ou b - importante/negrito</li>
-			<li>em ou i - enfase/italico</li>
-			<li>u - underline/sublinhado (está em desuso)</li>
-			<li>s - riscado</li>
-			<li>mark - marcador</li>
-			<li>pre - pre-formatado</li>
-			<li>code - codigo</li>
-			<li>blockquote - Citação</li>
-			<li>sub - subscrito</li>
-			<li>sup - subrescrito</li>
-			<li>table (rolspan e colspan)</li>
-			<li>thead, tbody ou tfoot - cabecalhp, main, rodape</li>
-			<li>tr com th - linha 1</li>
-			<li>tr com td</li>
-			<li>Links adicionais</li>
-			<li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u</li>
-		</ul>
-		<img src="ada.png" alt="Descricao da imagem">
-	</section>
+	<header>
+		<nav>
+			<a href="index.html">
+				<img src="ada.png" alt="Logo ADA" width="40">
+			</a>
 
-	<section id="semantica">
-		<h2>Tags de semântica HTML</h2>
-		<ul>
-			<li>header - cabecalho</li>
-			<li>main - conteudo principal</li>
-			<li>aside - conteudo lateral</li>
-			<li>footer - rodape</li>
-			<li>section - sessão</li>
-			<li>figure - envolve imagem</li>
-			<li>nav - barra navegacao</li>
-		</ul>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="habilidades.html">Habilidades</a></li>
+				<li><a href="portfolio.html">Portfólio</a></li>
+			</ul>
+		</nav>
+	</header>
 
-		<h3>Figure</h3>
-		<figure>
-			<img src="link_da_imagem" alt="Logo do HTML" width="100">
-			<figcaption>Descrição da imagem</figcaption>
-		</figure>
+	<main>
+		<h1 id="titulo">FrontEnd com React</h1>
+		<section>
+			<!-- # Formulários no HTML
+			
+			- Documentação da tag input no MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+			- Documentação da tag select no MDN: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/select
+			- Documentação da tag textarea no MDN: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea -->
+			<h2>Formulários</h2>
+			<form method="" action="">
+				<div>
+					<label for="nome_completo">Nome completo:</label>
+					<input type="text" name="nome" id="nome_completo" placeholder="Digite seu nome" required autofocus>
+				</div>
 
-		<h3>ARTICLE - Para conteúdos divididos em SUBconteúdos internos</h3>
-		<!-- Card de uma postagem do Blog -->
-		<article>
-			<header>
-				<!-- Título -->
-			</header>
-			<main>
-				<!-- Imagem -->
-				<!-- Descrição -->
-			</main>
-			<footer>
-				<!-- Autor -->
-				<!-- Data de publicação -->
-				<!-- Palavras-chave -->
-			</footer>
-		</article>
-	</section>
+				<div>
+					<label for="pass">Senha:</label>
+					<input type="password" name="senha" id="pass">
+				</div>
 
-	<section id="formularios">
-		<h2>Formularios</h2>
-		<ul class="inputs">
-			<li>inputs diversos</li>
-			<li>textarea</li>
-			<li>select</li>
-		</ul>
-		<select name="tecnologias" id="">
-			<option value="html">HTML</option>
-			<option value="css">CSS</option>
-		</select>
-	</section>
+				<div>
+					<label for="mail">Email:</label>
+					<input type="email" name="email" id="mail">
+				</div>
 
-	<section id="css">
-		<h2>CSS</h2>
-		<ul>
-			<li>font-size - tamanho</li>
-			<li>font-weight - largura da fonte</li>
-			<li>line-height - altura da linha</li>
-			<li>color</li>
-			<li>background-color</li>
-			<li>font family</li>
-			<li>margin</li>
-			<li>padding</li>
-			<li>border</li>
-			<li>border-radius</li>
-			<li>width</li>
-			<li>height</li>
-			<li>ID</li>
-			<li>classes</li>
-		</ul>
+				<div>
+					<label for="rage">Idade:</label>
+					<input type="number" name="idade" id="rage">
+				</div>
 
-	</section>
+				<div>
+					<label for="dt">Nascimento:</label>
+					<input type="date" name="data" id="dt">
+				</div>
 
-	<section id="flexbox">
-		<h2>DISPLAY FLEXBOX</h2>
-		<p>block - linha inteira bloqueada</p>
-		<p>inline - seu espaço E na linha</p>
+				<div>
+					<label for="hr">Horário:</label>
+					<input type="time" name="hora" id="hr">
+				</div>
 
-		<p>flex - display fica block</p>
-		<p>gap - espaço entre objetos (se usar justify-content nem precisa)</p>
-		<p>flex-direction - row ou column</p>
-		<p>OBS: row ou column invertem as funções de justify-content por align-items e vice-versa</p>
+				<div>
+					<label for="fl">Curriculum:</label>
+					<input type="file" name="arquivo" id="fl">
+				</div>
 
-		<ul>
-			<!-- organiza as caixas unidas -->
-			<li>ALINHAMENTO HORIZONTAL</li>
-			<li>justify-content - start, center ou end</li>
-			<!-- organiza o espaçamento entre as caixas -->
-			<li>justify-content: space-around - ao redor</li>
-			<li>justify-content: space-between - entre</li>
-			<li>justify-content: space-evenly - IGUAL</li>
-		</ul>
-		<ul>
-			<li>ALINHAMENTO VERTICAL (Ideal p/ quando objetos tiverem alturas diferentes</li>
-			<li>align-items: start, center, end</li>
-		</ul>
+				<div>
+					<label for="url">URL:</label>
+					<input type="url" name="site" id="url">
+				</div>
 
-		<div class="container">
-			<div class="box">Conteudo</div>
-			<div class="box2">Meu Conteudo</div>
-			<div class="box">Nosso Conteudo</div>
-			<div class="box2">Conteudo Daqueles</div>
-		</div>
-	</section>
+				<div>
+					<label for="color">COR:</label>
+					<input type="color" name="cor" id="color">
+				</div>
 
-	<section id="grid-layout">
-		<h2>GRID - grades</h2>
-		<ul>
-			<li><strong>grid-template-columns</strong> - quantidade E largura de cada coluna</li>
-			<li><strong>grid-template-columns: repeat(4, 100px)</strong> - largura fixa definida</li>
-			<li><strong>grid-template-columns: repeat(4, 1fr)</strong>- largura flexível (flex-row) - preenche 100% do
-				container</li>
+				<div>
+					<label for="range">Fome:</label>
+					<input type="range" name="range" id="range" min="0" max="100" value="95">
+				</div>
 
-		</ul>
-		<div class="container-grid">
-			<div class="caixa"></div>
-			<div class="caixa"></div>
-			<div class="caixa"></div>
-			<div class="caixa"></div>
-			<div class="caixa"></div>
-			<div class="caixa"></div>
-		</div>
-	</section>
+				<div>
+					<p>Tecnologia</p>
+					<input type="checkbox" name="javascript" value="js" id="js">
+					<label for="js">JavaScript:</label><br>
+					
+					<input type="checkbox" name="node" value="node" id="node">
+					<label for="node">Node:</label><br>
+					
+					<input type="checkbox" name="react" value="react" id="react">
+					<label for="react">React</label><br>
+				</div>
+				
+				<div>
+					<p>Sexo</p>
+					<input type="radio" name="sexo" value="m" id="masculino">
+					<label for="masculino">Masculino</label><br>
+
+					<input type="radio" name="sexo" value="f" id="feminino">
+					<label for="feminino">Feminino</label><br>
+
+					<input type="radio" name="sexo" value="nc" id="nadaconsta">
+					<label for="nadaconsta">Prefiro não dizer:</label><br>
+				</div>
+
+				<div>
+					<label for="texto">Mensagem:</label><br>
+					<textarea name="msg" id="texto" cols="30" rows="5" placeholder="Digite aqui sua reclamação" border-radius: "></textarea>
+				</div>
+
+				<div>
+					<label for="estado">Estado:</label>
+					<select name="estado" id="estado">
+						<option value="ac">Acre</option>
+						<option value="ce">Ceará</option>
+						<option value="pe">Pernambuco</option>
+					</select>
+				</div><br>
+
+				<div>
+					<input type="reset" value="Limpar">
+				</div>
+
+				<div>
+					<input type="submit" value="Enviar">
+				</div>
+			</form>
+		</section>
+		<hr>
+
+		<section>
+			<h2>Tabelas</h2>
+			<table border="1">
+				<thead>
+					<tr>
+						<th colspan="4">Família</th>
+					</tr>
+					<tr>
+						<th>id</th>
+						<th>Nome</th>
+						<th>CPF</th>
+						<th>Renda</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>01</td>
+						<td>Adriano</td>
+						<td>12345678900</td>
+						<td rowspan="2">R$ 4.500</td>
+					</tr>
+					<tr>
+						<td>02</td>
+						<td>Rebeca</td>
+						<td>67890012345</td>
+					</tr>
+					<tr>
+						<td>03</td>
+						<td>Júnior</td>
+						<td>12345678900</td>
+						<td>R$ 1.400</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<hr>
+		<section id="html">
+			<h2>Tags de formatação HTML</h2>
+			<ul>
+				<li>Comentários</li>
+				<li>h1 - h6</li>
+				<li>p</li>
+				<li>hr</li>
+				<li><a href="" target="_blank"></a>Link</li>
+				<li>img</li>
+				<li>br</li>
+				<li>ul -> li</li>
+				<li>ol -> li</li>
+				<li>div (block)</li>
+				<li>span (inline)</li>
+				<li>strong ou b - importante/negrito</li>
+				<li>em ou i - enfase/italico</li>
+				<li>u - underline/sublinhado (está em desuso)</li>
+				<li>s - riscado</li>
+				<li>mark - marcador</li>
+				<li>pre - pre-formatado</li>
+				<li>code - codigo</li>
+				<li>blockquote - Citação</li>
+				<li>sub - subscrito</li>
+				<li>sup - subrescrito</li>
+				<li>table (rolspan e colspan)</li>
+				<li>thead, tbody ou tfoot - cabecalhp, main, rodape</li>
+				<li>tr com th - linha 1</li>
+				<li>tr com td</li>
+				<li>Links adicionais</li>
+				<li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u</li>
+			</ul>
+			<img src="ada.png" alt="Descricao da imagem">
+		</section>
+
+		<section id="semantica">
+			<h2>Tags de semântica HTML</h2>
+			<ul>
+				<li>header - cabecalho</li>
+				<li>main - conteudo principal</li>
+				<li>aside - conteudo lateral</li>
+				<li>footer - rodape</li>
+				<li>section - sessão</li>
+				<li>figure - envolve imagem</li>
+				<li>nav - barra navegacao</li>
+			</ul>
+
+			<h3>Figure</h3>
+			<figure>
+				<img src="link_da_imagem" alt="Logo do HTML" width="100">
+				<figcaption>Descrição da imagem</figcaption>
+			</figure>
+
+			<h3>ARTICLE - Para conteúdos divididos em SUBconteúdos internos</h3>
+			<!-- Card de uma postagem do Blog -->
+			<article>
+				<header>
+					<!-- Título -->
+				</header>
+				<main>
+					<!-- Imagem -->
+					<!-- Descrição -->
+				</main>
+				<footer>
+					<!-- Autor -->
+					<!-- Data de publicação -->
+					<!-- Palavras-chave -->
+				</footer>
+			</article>
+		</section>
+
+		<section id="formularios">
+			<h2>Formularios</h2>
+			<ul class="inputs">
+				<li>inputs diversos</li>
+				<li>textarea</li>
+				<li>select</li>
+			</ul>
+			<select name="tecnologias" id="">
+				<option value="html">HTML</option>
+				<option value="css">CSS</option>
+			</select>
+		</section>
+
+		<section id="css">
+			<h2>CSS</h2>
+			<ul>
+				<li>font-size - tamanho</li>
+				<li>font-weight - largura da fonte</li>
+				<li>line-height - altura da linha</li>
+				<li>color</li>
+				<li>background-color</li>
+				<li>font family</li>
+				<li>margin</li>
+				<li>padding</li>
+				<li>border</li>
+				<li>border-radius</li>
+				<li>width</li>
+				<li>height</li>
+				<li>ID</li>
+				<li>classes</li>
+			</ul>
+
+		</section>
+
+		<section id="flexbox">
+			<h2>DISPLAY FLEXBOX</h2>
+			<p>block - linha inteira bloqueada</p>
+			<p>inline - seu espaço E na linha</p>
+
+			<p>flex - display fica block</p>
+			<p>gap - espaço entre objetos (se usar justify-content nem precisa)</p>
+			<p>flex-direction - row ou column</p>
+			<p>OBS: row ou column invertem as funções de justify-content por align-items e vice-versa</p>
+
+			<ul>
+				<!-- organiza as caixas unidas -->
+				<li>ALINHAMENTO HORIZONTAL</li>
+				<li>justify-content - start, center ou end</li>
+				<!-- organiza o espaçamento entre as caixas -->
+				<li>justify-content: space-around - ao redor</li>
+				<li>justify-content: space-between - entre</li>
+				<li>justify-content: space-evenly - IGUAL</li>
+			</ul>
+			<ul>
+				<li>ALINHAMENTO VERTICAL (Ideal p/ quando objetos tiverem alturas diferentes</li>
+				<li>align-items: start, center, end</li>
+			</ul>
+
+			<div class="container">
+				<div class="box">Conteudo</div>
+				<div class="box2">Meu Conteudo</div>
+				<div class="box">Nosso Conteudo</div>
+				<div class="box2">Conteudo Daqueles</div>
+			</div>
+		</section>
+
+		<section id="grid-layout">
+			<h2>GRID - grades</h2>
+			<ul>
+				<li><strong>grid-template-columns</strong> - quantidade E largura de cada coluna</li>
+				<li><strong>grid-template-columns: repeat(4, 100px)</strong> - largura fixa definida</li>
+				<li><strong>grid-template-columns: repeat(4, 1fr)</strong>- largura flexível (flex-row) - preenche 100% do
+					container</li>
+
+			</ul>
+			<div class="container-grid">
+				<div class="caixa"></div>
+				<div class="caixa"></div>
+				<div class="caixa"></div>
+				<div class="caixa"></div>
+				<div class="caixa"></div>
+				<div class="caixa"></div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+
+	</footer>
 </body>
 
 </html>
